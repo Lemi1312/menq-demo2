@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MENQ — Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="top">
+    <div class="left">
+      <div class="logo"><img src="images/mnq.png" alt="MENQ logo" class="logo-img" /></div>
+      <div class="brand">MENQ</div>
+    </div>
+  </header>
+
+  <div class="phone-frame">
+  <main class="wrap" id="mainView">
+    <section class="hero">
+      <h1>Dobrodošli — skenirajte i naručite</h1>
+      <p class="subtitle">Demo MENQ — brzo, mobilno i pregledno.</p>
+    </section>
+
+    <section id="categories" class="categories" aria-label="Kategorije">
+      <!-- category cards injected here -->
+    </section>
+  </main>
+  </div>
+
+  <!-- Category full-screen overlay -->
+  <div id="catOverlay" class="cat-overlay hidden" aria-hidden="true">
+    <div class="overlay-header">
+      <button id="backBtn" class="back-btn" aria-label="back">←</button>
+      <h2 id="overlayTitle">Kategorija</h2>
+    </div>
+    <div id="overlayContent" class="overlay-content" role="list">
+      <!-- items for category will be injected here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
